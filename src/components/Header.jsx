@@ -18,7 +18,7 @@ const Header = () => {
     };
 
     return (
-        <header className="absolute w-full transition-all duration-300">
+        <header className="absolute w-full transition-all duration-300 z-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
                 {/** Logo/Name */}
                 <motion.div
@@ -154,8 +154,10 @@ const Header = () => {
                         </a>
                     </div>
 
-                    <button onclick={() => {toggleMenu() 
-                    openContactForm()}}
+                    <button 
+                    //onclick={() => {toggleMenu() 
+                    //openContactForm()}}
+                    onClick={openContactForm}
                     className="mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-bold">
                         contrate-me
                     </button>
