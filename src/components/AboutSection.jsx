@@ -1,7 +1,7 @@
 import {useRef, useEffect} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import { div } from 'framer-motion/client';
+
 
 
 const AboutSection = () => {
@@ -11,16 +11,15 @@ const AboutSection = () => {
   const starsRef = useRef([]);
 
   useEffect(() => {
-
     gsap.registerPlugin(ScrollTrigger);
 
     {/** Animação para o título */}
     gsap.fromTo(
       titleRef.current,
-      { opacity: 0, y: 100 },
+      { y: 100, opacity: 0 },
       {
-        opacity: 1,
         y: -300,
+        opacity: 1,
         duration: 0.8,
         scrollTrigger: {
             trigger: sectionRef.current,
@@ -108,15 +107,14 @@ const AboutSection = () => {
 
         </div>
 
-        <div className="container mx-auto h-full px-4 flex flex-col items-center justify-center">
-            <h1
-            ref={titleRef}
+        <div className="container mx-auto  px-4 h-full flex flex-col items-center justify-center">
+            <h1 ref={titleRef}
             className="text-4xl md:text-6xl font-bold sm:mb-16 text-center text-white opacity-0">Sobre</h1>
 
         </div>
 
         <div
-        ref={titleRef}
+        ref={introRef}
         className='absolute lg:bottom-[-20rem] md:bottom-[-10rem] bottom-[-20rem] left-0 w-full flex md:flex-row flex-col justify-between lg:px-24 px-5 items-center opacity-0'>
             <h3 className='text-sm md:text-2xl font-bold text-purple-200 lg:max-[45rem] max-[27rem] tracking-wider md:mt-20 sm:mt-[-40rem] mt-[-32rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, neque sed dicta nisi quisquam voluptate! Aliquam perspiciatis illo maxime, ducimus quo voluptates nesciunt dolores sint sed rem molestias dolorem totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repudiandae quasi soluta impedit. Accusamus perferendis esse dolores facilis doloribus iusto soluta quibusdam assumenda ipsam pariatur, cupiditate laudantium, consequatur animi quisquam</h3>
 
