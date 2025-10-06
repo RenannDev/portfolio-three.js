@@ -15,8 +15,8 @@ const HeroSection = () => {
             type: "spring",
             stiffness: 40,
           }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold z-10 mb-6 ">
-            construindo resultados <br />rápidos e confiáveis
+          className="text-5xl md:text-7xl lg:text-7xl font-bold z-10 mb-6 ">
+            Construindo resultados <br />rápidos e confiáveis
           </motion.h1>
 
           <motion.p
@@ -28,14 +28,14 @@ const HeroSection = () => {
             type: "spring",
             stiffness: 40,
           }}
-          className='text-xl md:text-1xl lg:text-2xl text-purple-200 max-w-2xl'>
+          className='text-xl md:text-1xl lg:text-1xl text-purple-200 max-w-2xl'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus esse error hic placeat labore, iusto temporibus ratione nisi delectus reiciendis dignissimos? Nisi culpa nesciunt facere dolore, officiis ex illo?
           </motion.p>
 
         </div>
 
         {/** seção direita elemento 3d */}
-          <Spline className='absolute xl:right-[-28%] right-0 top-[-20%] lg-top-0'
+          <Spline className='absolute xl:right-[-28%] right-0  lg-top-0'
           scene="https://prod.spline.design/E87WuUQq6SIhebUC/scene.splinecode" />
     </section>
  

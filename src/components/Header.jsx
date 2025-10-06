@@ -44,7 +44,7 @@ const Header = () => {
 
                 {/** computador navegação */}
                 <nav className="lg:flex hidden space-x-8">
-                    {["Home", "About", "Projects", "Experience", "Contact"].map(
+                    {["Inicio", "Sobre", "Projetos", "Contato"].map(
                         (item, idx) => (
                             <motion.a
                                 initial={{ opacity: 0, y: -20 }}
@@ -135,7 +135,7 @@ const Header = () => {
 
                 <nav 
                 className="flex flex-col space-y-3">
-                {["Home", "About", "Projects", "Experience", "Contact"].map((item) => (
+                {["Inicio", "Sobre", "Projetos", "Contato"].map((item) => (
                     <a onClick={toggleMenu}
                     className="text-gray-300 font-medium py-2"
                     key={item}
