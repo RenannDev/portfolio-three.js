@@ -4,26 +4,31 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SlShareAlt } from 'react-icons/sl'
 import { section } from 'framer-motion/client'
 
+import projeto1 from '/src/assets/images/project-1.png'
+import projeto2 from '/src/assets/images/project-2.png'
+import projeto3 from '/src/assets/images/project-3.png'
+import projeto4 from '/src/assets/images/project-4.png'
+
 // imagens dos projetos
 const projectImages = [{
     id: 1,
     title: "Projeto 1",
-    imageSrc: "src/assets/images/project-1.png"
+    imageSrc: projeto1
 },
 {
     id: 2,
     title: "Projeto 2",
-    imageSrc: "src/assets/images/project-2.png"
+    imageSrc: projeto2
 },
 {
     id: 3,
     title: "Projeto 3",
-    imageSrc: "src/assets/images/project-3.png"
+    imageSrc: projeto3
 },
 {
     id: 4,
     title: "Projeto 4",
-    imageSrc: "src/assets/images/project-4.png"
+    imageSrc: projeto4
 }]
 
 const ProjectsSection = () => {

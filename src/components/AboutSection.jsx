@@ -2,6 +2,9 @@ import {useRef, useEffect} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
+import person from '/src/assets/images/person.png'
+
+
 
 
 const AboutSection = () => {
@@ -120,7 +123,7 @@ const AboutSection = () => {
 
             <img
             className='lg:h-[40rem] md:h-[25rem] h-[20rem] mix-blend-lighten'
-            src="src/assets/images/person.png" alt="foto de perfil" />
+            src={person} alt="foto de perfil" />
 
         </div>
 
