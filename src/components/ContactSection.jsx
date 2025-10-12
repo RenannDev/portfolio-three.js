@@ -113,15 +113,15 @@ const ContactSection = () => {
                 className='text-black 
                     md:w-[10rem] w-[20rem] lg:scale-[0.3] sm:scale-[0.25] scale-[0.07] md:font-bold
                     text-sm sm:text-base leading-none mb-5'>
-                    Vamos trabalhar juntos? Entre em contato!
+                    Vamos trabalhar juntos?
                 </h1>
 
                 <p className='text-black lg:w-[40rem] w-[20rem] absolute sm:mt-3 mt-1 md:scale-[0.1] scale-[0.068]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates necessitatibus, dolore illum, magni pariatur fugit dignissimos a molestias quos sequi accusantium. Voluptatum eligendi sit quo fugit, alias expedita itaque.
+                    Gostaria de discutir uma nova ideia, um projeto ou simplesmente saber mais sobre como minhas habilidades Full Stack podem agregar valor? Sinta-se à vontade para entrar em contato. Estou sempre aberto a novas oportunidades e colaborações.
                 </p>
 
                 <button className='px-10 py-2 rounded-xl bg-black hover:bg-white hover:text-black transition-all duration-500 scale-[0.1] absolute sm:mt-9 mt-7 text-nowrap'>
-                    Contatar-me
+                    Conecte-se
                 </button>
 
             </div>

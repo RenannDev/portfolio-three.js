@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const Header = () => {
     // menu para mobile
@@ -16,6 +17,23 @@ const Header = () => {
     const closeContactForm = () => {
         setContactFormOpen(false);
     };
+
+    // função para enviar email
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value});
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.send('service_cpz5dhi', 'template_rtn8a8t', formData, '7Z0VRdBtllDQ6WL9x')
+      .then((result) => {
+          alert('Mensagem enviada com sucesso!');
+      }, (error) => {
+          alert('Erro ao enviar mensagem, tente novamente.');
+      });
+  };
 
     return (
         <header className="absolute w-full transition-all duration-300 z-50">
@@ -203,7 +221,7 @@ const Header = () => {
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                                     Nome
                                 </label>
-                                <input type="text" name="name" id="name"
+                                <input name="name" value={formData.name} onChange={handleChange}
                                 placeholder="Digite seu nome"
                                 className="w-full px-4 py-2 border border-gray-600  rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500 bg-gray-700" />
                             </div>
@@ -212,7 +230,7 @@ const Header = () => {
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
                                     Email
                                 </label>
-                                <input type="email" name="email" id="email"
+                                <input name="email" value={formData.email} onChange={handleChange}
                                 placeholder="Digite seu email"
                                 className="w-full px-4 py-2 border border-gray-600  rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500 bg-gray-700" />
                             </div>
@@ -221,7 +239,7 @@ const Header = () => {
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
                                     Mensagem
                                 </label>
-                                <textarea  id="message"
+                                <textarea  id="message" name="message" value={formData.message} onChange={handleChange}
                                 rows="4"
                                 placeholder="Como posso ajudar?"
                                 className="w-full px-4 py-2 border border-gray-600  rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500 bg-gray-700" />
