@@ -38,7 +38,7 @@ const Header = () => {
                     </div>
 
                     <span className="text-xl font-bold bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent">
-                        Vitor R. Dev
+                        Renan Dev
                     </span>
                 </motion.div>
 
@@ -56,8 +56,9 @@ const Header = () => {
                                     delay: 0.7 + idx * 0.2,
                                 }}
                                 key={item}
+                                
                                 className="relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-violet-400 font-medium transition-colors duration-300 group"
-                                href="#"
+                                href={`#${item.toLowerCase()}`}
                             >
                                 {item}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-violet-600 group-hover:w-full transition-all duration-300"></span>
@@ -76,7 +77,7 @@ const Header = () => {
                         }}
                         duration={0.8}
                         className="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
-                        href="#"
+                        href="https://github.com/RenannDev/" target="_blank"
                     >
                         <FiGithub className="w-5 h-5" />
                     </motion.a>
@@ -89,7 +90,7 @@ const Header = () => {
                         }}
                         duration={0.8}
                         className="text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
-                        href="#"
+                        href="https://www.linkedin.com/in/vitorrenan/" target="_blank"
                     >
                         <FiLinkedin className="w-5 h-5" />
                     </motion.a>
@@ -139,17 +140,17 @@ const Header = () => {
                     <a onClick={toggleMenu}
                     className="text-gray-300 font-medium py-2"
                     key={item}
-                    href="#">{item}</a>
+                    href={`#${item.toLowerCase()}`}>{item}</a>
                 ))}
                 </nav>
 
                 <div
                 className="pt-4 border-t border-gray-200 dark:border-gray-700">
                     <div className="flex space-x-5">
-                        <a href="#">
+                        <a href="https://github.com/RenannDev/" target="_blank">
                             <FiGithub className="w-5 h-5 text-gray-300" />
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/vitorrenan/" target="_blank">
                             <FiLinkedin className="w-5 h-5 text-gray-300" />
                         </a>
                     </div>

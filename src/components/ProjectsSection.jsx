@@ -13,22 +13,26 @@ import projeto4 from '/src/assets/images/project-4.png'
 const projectImages = [{
     id: 1,
     title: "Projeto 1",
-    imageSrc: projeto1
+    imageSrc: projeto1,
+    link: "https://www.lojasandramodas.com.br/"
 },
 {
     id: 2,
     title: "Projeto 2",
-    imageSrc: projeto2
+    imageSrc: projeto2,
+    link: "https://job-analyzer-insight.vercel.app/"
 },
 {
     id: 3,
     title: "Projeto 3",
-    imageSrc: projeto3
+    imageSrc: projeto3,
+    link: "https://renanndev.github.io/Gato-transcricao-youtube/"
 },
 {
     id: 4,
     title: "Projeto 4",
-    imageSrc: projeto4
+    imageSrc: projeto4,
+    link: "https://catalogo-de-produtos-interativo.vercel.app/"
 }]
 
 const ProjectsSection = () => {
@@ -171,7 +175,8 @@ const ProjectsSection = () => {
     className="relative py-20 bg-[#f6f6f6] overflow-hidden"> 
 
         {/* Titulo da seção */}
-        <div ref={sectionRef} className='container mx-auto px-4 mb-16 relative z-10'>
+        <div id="projetos"
+        ref={sectionRef} className='container mx-auto px-4 mb-16 relative z-10'>
             <h2 ref={titleRef} className='text-4xl md:text-5xl lg:text-6xl font-bold text-black text-center mb-4 opacity-0'>Projetos em Destaque</h2>
             <div ref={titleLineRef} className='w-0  h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto opacity-0'></div>
         </div>
@@ -184,13 +189,16 @@ const ProjectsSection = () => {
              className='horizontal-section flex md:w-[400%] w-[420%]'>
 
                 {projectImages.map((project) => (
-                    <div key={project.id} className='panel relative flex items-center justify-center'>
-                        <div className='relative w-full h-full flex flex-col items-center justify-center p-4 sm:p-8 md:p-12'>
-                            <img className='project-image max-w-full max-h-full rounded-2xl object-cover'
+                    <div key={project.id} className='panel relative flex items-center justify-center '>
+                        <div className='relative w-full h-full flex flex-col items-center justify-center p-4 sm:p-8 md:p-12 '>
+                            <img className='project-image max-w-full max-h-full rounded-2xl object-cover '
                             src={project.imageSrc} alt="project" />
 
-                            <h2 className='project-title flex items-center gap-3 md:text-3xl text-sm md:font-bold text-black mt-6 z-50 text-nowrap hover:text-gray-400 transition-colors duration-300 cursor-pointer'>
-                                {project.title} <SlShareAlt />
+                            <h2
+                            key={project.id} 
+                            className='project-title flex items-center gap-3 md:text-3xl text-sm md:font-bold text-black mt-6 z-50 text-nowrap hover:text-gray-400 transition-colors duration-300 cursor-pointer'>
+                                <a href={project.link} target="_blank">{project.title} </a>
+                                 <SlShareAlt />
                             </h2>
                         </div>
                     </div>

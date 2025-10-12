@@ -20,11 +20,11 @@ const Footer = () => {
                     <div 
                     className='flex space-x-4'>
 
-                        <a href="#" target='_blank' className='text-gray-700 hover:text-violet-400 transition-colors'>
+                        <a href="https://www.linkedin.com/in/vitorrenan/" target='_blank' className='text-gray-700 hover:text-violet-400 transition-colors'>
                             <FiLinkedin className="w-5 h-5" />
                         </a>
                         
-                        <a href="#" target='_blank' className='text-gray-700 hover:text-violet-400 transition-colors'>
+                        <a href="https://github.com/RenannDev/" target='_blank' className='text-gray-700 hover:text-violet-400 transition-colors'>
                             <FiGithub className="w-5 h-5" />
                         </a>
 

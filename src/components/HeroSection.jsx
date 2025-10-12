@@ -16,7 +16,7 @@ const HeroSection = () => {
             stiffness: 40,
           }}
           className="text-5xl md:text-7xl lg:text-7xl font-bold z-10 mb-6 ">
-            Construindo resultados <br />rápidos e confiáveis
+            Construindo Resultados <br />Rápidos e Confiáveis
           </motion.h1>
 
           <motion.p
@@ -29,7 +29,7 @@ const HeroSection = () => {
             stiffness: 40,
           }}
           className='text-xl md:text-1xl lg:text-1xl text-purple-200 max-w-2xl'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus esse error hic placeat labore, iusto temporibus ratione nisi delectus reiciendis dignissimos? Nisi culpa nesciunt facere dolore, officiis ex illo?
+            Sou um desenvolvedor Full Stack apaixonado por criar experiências digitais incríveis. Estou sempre em busca de conhecimento e me mantenho atualizado sobre as tendências do mercado. Tenho proficiência em MERN Stack, SQL, UX, TypeScript e design responsivo, estou pronto para construir a sua próxima aplicação web com excelência e dedicação.
           </motion.p>
 
         </div>

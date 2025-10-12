@@ -37,7 +37,7 @@ const AboutSection = () => {
         introRef.current,
         {y: 100, opacity: 0, filter: "blur(10px)"},
         {
-            y: -400,
+            y: -330,
             opacity: 1,
             filter: "blur(0px)",
             duration: 1.5,
@@ -88,6 +88,7 @@ const AboutSection = () => {
   return (
     
       <section ref={sectionRef}
+      id="sobre"
       className="h-screen relative overflow-hidden bg-gradient-to-b from-black to-[#9a74cf50]">
 
         <div className='absolute inset-0 overflow-hidden '>
@@ -118,11 +119,15 @@ const AboutSection = () => {
 
         <div
         ref={introRef}
-        className='absolute lg:bottom-[-20rem] md:bottom-[-10rem] bottom-[-20rem] left-0 w-full flex md:flex-row flex-col justify-between lg:px-24 px-5 items-center opacity-0'>
-            <h3 className='text-sm  md:text-2xl  font-bold text-purple-200 lg:max-[45rem] max-[27rem] tracking-wider md:mt-20 sm:mt-[-40rem] mt-[-32rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, neque sed dicta nisi quisquam voluptate! Aliquam perspiciatis illo maxime, ducimus quo voluptates nesciunt dolores sint sed rem molestias dolorem totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repudiandae quasi soluta impedit. Accusamus perferendis esse dolores facilis doloribus iusto soluta quibusdam assumenda ipsam pariatur, cupiditate laudantium, consequatur animi quisquam</h3>
+        className='absolute lg:bottom-[-20rem] md:bottom-[-10rem]
+         bottom-[-20rem] left-0 w-full flex md:flex-row flex-col justify-between lg:px-24 px-5 items-center opacity-0'>
+            <h3 className='text-sm  md:text-2xl  font-bold text-purple-200 lg:max-[45rem] max-[27rem] tracking-wider md:mt-20 sm:mt-[-40rem] mt-[-12rem]'>Minhas ferramentas de trabalho incluem um arsenal completo para o desenvolvimento web: JavaScript, TypeScript, React.js para o frontend; Node.js, Express.js e bancos de dados como MongoDB e MySQL para o backend. Sou proficiente em HTML5, CSS3, Tailwind CSS e SASS, garantindo a construção de interfaces modernas e responsivas. Implemento eficientemente metodologias ágeis como Scrum e Kanban, fruto da experiência prática e dos estudos em DevOps e Engenharia de Software na faculdade e em minicursos.
+
+Meu objetivo é claro: continuar a aprender e a me desenvolver, dominando novas tecnologias e aplicando as melhores práticas para criar soluções que não apenas atendam, mas superem as expectativas, impulsionando o sucesso dos projetos.</h3>
 
             <img
-            className='lg:h-[40rem] md:h-[25rem] h-[20rem] mix-blend-lighten'
+            className='lg:h-[40rem] md:h-[25rem] h-[20rem] mix-blend-lighten
+            sm:h-[30rem]'
             src={person} alt="foto de perfil" />
 
         </div>

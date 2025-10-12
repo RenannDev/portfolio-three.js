@@ -88,7 +88,8 @@ const ContactSection = () => {
  }, [])
 
   return (
-    <section 
+    <section
+    id="contato" 
     ref={sectionRef}
     className='flex items-center justify-center bg-black relative'
     style={{ overscrollBehavior: 'none'}}>
